@@ -70,7 +70,7 @@ su librenms bash -c '/opt/librenms/scripts/composer_wrapper.php install --no-dev
 echo "Configuring MySQL (mariadb)"
 echo "###########################################################"
 systemctl restart mysql
-# Pass commands to mysql and create DB, user, and privlages
+# Pass commands to mysql and create DB, user, and privileges
 echo "Please enter a password for the Database:"
 read ANS
 echo "###########################################################"
@@ -185,5 +185,5 @@ echo "Installing validation fix"
 sudo -H -u librenms bash -c 'pip3 install --user -U -r /opt/librenms/requirements.txt'
 ######
 echo "###############################################################################################"
-echo "Naviagte to http://$HOSTNAME/install in you web browser to finish the installation."
+echo "Navigate to http://$HOSTNAME/install in your web browser to finish the installation."
 echo "###############################################################################################"
